@@ -8,7 +8,15 @@ control page pulls this repo too, then restarts the sound.
 
 | Folder  | What goes in it | Where it plays |
 |---------|-----------------|----------------|
-| `owls/` | Owl calls: hoots, trills, whinnies | Only the elevated (tree) speaker, when Birds is on |
+| `owls/` | Owl calls: hoots, trills, whinnies | Only the elevated (tree) speakers, when Birds is on |
+
+### Naming owls
+
+The letters at the start of a file name say which owl it is: `owlA_01.wav`,
+`owlA_02.wav`... are owl `owlA`, and `owlB_01.wav`... are owl `owlB`. Keep each
+owl to one bird or species, so it sounds like the same animal every time it
+calls. On the Pi, `AMBIENT_SPEAKERS` can give each elevated speaker its own
+owl (see the ambientPlayer README); a speaker set to `birds` plays any of them.
 
 The player picks a random file each time and varies its speed, tone and
 distance slightly, so 5 to 20 different takes are plenty. More variety beats
